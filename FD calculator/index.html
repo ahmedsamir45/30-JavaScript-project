@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+            <div class="calculator">
+                <h2>FD Calculator</h2>
+                <div class="input-section">
+                    <label for="investment">Total Investment</label>
+                    <input type="range" name="investment" id="investment" min="10000" max="1000000" step="10000" value="100000">
+                    <span id="investment-value">₹100,1000</span>
+                </div>
+                <div class="input-section">
+                    <label for="interest-rate">Rate of interest(p.a)</label>
+                    <input type="range" name="interest-rate" id="interest-rate" min="1" max="15" step="0.1" value="6.5">
+                    <span id="investment-rate-value">6.5%</span>
+                </div>
+                <div class="input-section">
+                    <label for="time-period">Time period (Years)</label>
+                    <input type="range" name="time-period" id="time-period" min="1" max="20" step="1" value="5">
+                    <span id="time-period-value">5</span>
+                </div>
+                <button onclick="calculateFD()">INVEST NOW</button>
+            </div>
+            <div class="output-section">
+                <h2>Result</h2>
+                <table>
+                    <tr>
+                        <td>Invested amout:</td>
+                        <td id="invested-amount">-</td>
+                    </tr>
+                    <tr>
+                        <td>Est. returns:</td>
+                        <td id="estimated-returns">-</td>
+                    </tr>
+                    <tr>
+                        <td>Total value:</td>
+                        <td id="total-value">-</td>
+                    </tr>
+                </table>
+            </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>

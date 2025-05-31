@@ -1,0 +1,111 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    color: rgb(52, 47, 47);
+}
+
+body {
+
+    min-height: 100vh;
+
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 100px;
+    animation: fadeIn 1s ease-in-out;
+    gap: 20px;
+}
+.container div{
+    border: 1px rgb(52, 115, 249) solid;
+    padding: 15px;
+    border-radius: 20px;
+
+}
+.container > div{
+    box-Shadow:  17px 18px 18px 3px rgba(0, 0, 0, 0.5);
+    background-color: rgb(165, 253, 223);
+}
+h2{
+    padding: 10px;
+    margin: 10px auto;
+    width: fit-content;
+    background-color: white;
+    color: blue;
+    border-radius: 4px;
+    text-align: center;
+    
+}
+.calculator div{
+    margin-bottom: 5px;
+}
+
+.calculator button {
+    padding: 10px;
+    background-color: blueviolet;
+    color: white;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    transition: .5s;
+    margin: 10px auto;
+    width: fit-content;
+    display: block;
+    cursor: pointer;
+}
+.calculator button:hover{
+    border-radius: 50px;
+    background-color: rgb(106, 25, 182);
+}
+.calculator div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 1em;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+table tr {
+    border-bottom: 1px solid #ddd;
+}
+
+table td {
+    padding: 12px 15px;
+    text-align: left;
+}
+
+table tr:nth-child(even) {
+    background-color: #f2f2f2; /* Light grey for alternating rows */
+}
+
+table tr:last-child {
+    border-bottom: none;
+}
+
+table td:first-child {
+    font-weight: bold;
+    color: #555; /* Slightly darker color for labels */
+}
+
+table td:last-child {
+    text-align: right;
+}
+
+
+@keyframes fadeIn{
+    from{opacity: 0;}
+    to{opacity: 1;}
+}
+
