@@ -48,7 +48,7 @@ To explore any project, navigate to its respective folder in this repository. Ea
 - Basic understanding of HTML, CSS, and JavaScript
 
 ### How to Run
-1. Clone this repository: `git clone https://github.com/your-username/your-repo-name.git`
+1. Clone this repository: `git clone https://github.com/ahmedsamir45/30-JavaScript-project.git`
 2. Navigate to the project folder you want to view.
 3. Open the `index.html` file in a web browser.
 
